@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+}
+
+.profileInfo {
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: teal;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.profileInfo h1 {
+    color:white;
+    font-size: 2rem; 
+    flex-grow: 1;
+}
+.profileInfo h1:hover{
+    color: black;
+    animation: alternate-reverse;
+}
+.profileInfo ul {
+    display: flex;
+    list-style: none;
+    padding-right: 1vw;
+    margin: 0px;
+    padding: 10px;
+    
+}
+.profileInfo li a
+{
+    color: white;
+}
+.profileInfo li a:hover{
+    color: black;
+}
+footer{
+    color: white;
+}
+footer:hover{
+    color: black;
+}
+
+.profileInfo li {
+    padding: 10px;
+}
+
+.bodyInfo {
+    display: flexbox;
+    background-color: powderblue;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    justify-items: stretch;
+    align-items: center;
+    text-align: center;
+}
+
+.logo_image img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+}
+
+.overview h2 {
+    font-size: 1.7rem;
+}
+
+.overview p {
+    font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.mainHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.UserData {
+    background-color: powderblue;
+    width: 100%;
+    padding: 20px;
+}
+.UserData{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    
+}
+.UserData img{
+    width: 40%;
+    height: auto; 
+    border-radius: 20px;    
+    object-fit: cover;
+    border-radius: 50%; 
+}
+.User{
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+footer {
+    background-color: teal; 
+    padding: 20px;
+    text-align: center; 
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.socialMedia {
+    margin-top: 10px;
+}
+.socialMedia a {
+    margin: 0 10px;
+    color: black; 
+    font-size: 1.5rem;
+    text-decoration: none; 
+}
+
+.socialMedia a:hover {
+    color: blue; 
+}
+.MakerInfo{
+    color: white;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    .bodyInfo {
+        grid-template-columns: 1fr; 
+    }
+    .UserData {
+        grid-template-columns: 1fr 1fr;   
+    }
+    .User{
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+    }
+    .profileInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profileInfo ul {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .UserData {
+        grid-template-columns: 1fr; 
+        padding-bottom: 20px;
+    }
+    .profileInfo h1 {
+        font-size: 1.2rem;
+    }
+    .User{
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+    }
+    .logo_image img {
+        max-width: 150px; 
+    }
+
+    .overview h2 {
+        font-size: 1rem;
+    }
+
+    .overview p {
+        font-size: 0.9rem;
+    }
+}
