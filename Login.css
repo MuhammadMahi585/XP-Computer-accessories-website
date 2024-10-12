@@ -38,6 +38,7 @@ fieldset{
     flex-direction: column;
     gap: 10px;
     font-size: 1.3rem;
+    padding: 20px;
 }
 fieldset a{
     color: white;
@@ -51,4 +52,25 @@ fieldset a:hover{
 }
 .login_form h1:hover{
     color:black
+}
+input[type="text"], input[type="password"] {
+    padding: 5px;
+    font-size: 1rem;
+    align-items: center;
+}
+input[type="submit"] {
+    padding: 5px;
+    margin: 2%;
+    font-size: 1.3rem;
+    
+}
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.inputTag{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
